@@ -1,0 +1,19 @@
+[package]
+name = "hard"
+version = "0.5.0"
+authors = ["tom25519 <tom25519@pm.me>"]
+edition = "2018"
+description = "Security hardened buffers for Rust based on libsodium"
+repository = "https://github.com/tom25519/hard"
+license = "MIT OR Apache-2.0"
+keywords = ["buffer", "libsodium", "memory", "sodium"]
+categories = ["api-bindings", "cryptography", "memory-management"]
+
+[dependencies]
+errno = "0.2.8"
+libsodium-sys-stable = "1.19.19"
+paste = "1.0.6"
+thiserror = "1.0.30"
+
+[features]
+restricted-types = []
